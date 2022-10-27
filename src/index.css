@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   font-family: 'Roboto', 'Noto Sans Devanagari', 'Noto Sans JP', sans-serif;
   color-scheme: light dark;
