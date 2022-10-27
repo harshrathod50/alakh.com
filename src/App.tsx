@@ -1,22 +1,22 @@
 import "./App.css";
 
-function App() {
+import type { FC } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
+import Root from "./pages/root/page";
+
+/**
+ * `App` serves as a container or entry point of application.
+ * @returns `ReactElement`
+ */
+const App: FC = () => {
   return (
-    <>
-      <h1 className="text-3xl font-bold">Hello, World!</h1>
-      <p>This is the personal web portfolio of Alakh Karmarkar.</p>
-      <h1 lang="hi" className="text-3xl font-bold">
-        नमस्ते, दुनिया!
-      </h1>
-      <p lang="hi">यह अलख करमरकर का निजी वेब पोर्टफोलियो है।</p>
-      <h1 lang="ja" className="text-3xl font-bold">
-        アラフ・カルマルカール
-      </h1>
-      <p lang="ja">
-        これは、アラフ・カルマルカールの個人的な Web ポートフォリオです。
-      </p>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/*" element={<Root />} />
+      </Routes>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;
