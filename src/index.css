@@ -1,5 +1,5 @@
 :root {
-  font-family: sans-serif;
+  font-family: 'Roboto', 'Noto Sans Devanagari', 'Noto Sans JP', sans-serif;
   color-scheme: light dark;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -9,9 +9,9 @@
 }
 
 h1, h2, h3, h4, h5, h6, th, thead {
-  font-family: serif;
+  font-family: 'Roboto Serif', 'Noto Serif Devanagari', 'Noto Serif JP', serif;
 }
 
 code {
-  font-family: Consolas;
+  font-family: 'Roboto Mono', Consolas;
 }

@@ -9,6 +9,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fontsource/noto-sans-devanagari": "^4.5.11",
+    "@fontsource/noto-sans-jp": "^4.5.12",
+    "@fontsource/noto-serif-devanagari": "^4.5.13",
+    "@fontsource/noto-serif-jp": "^4.5.12",
+    "@fontsource/roboto": "^4.5.8",
+    "@fontsource/roboto-mono": "^4.5.8",
+    "@fontsource/roboto-serif": "^4.5.10",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
