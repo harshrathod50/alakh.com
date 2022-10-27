@@ -5,8 +5,19 @@
     <link rel="icon" type="image/svg+xml" href="/icon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alakh Karmarkar | अलख करमरकर | アラフ・カルマルカール</title>
+    <script type="text/javascript" defer>
+      // Set theme mode according to client's system preference
+      // after document finishes loading.
+      window.addEventListener("load", (event) => {
+        if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+          document.documentElement.classList.add("dark");
+        } else {
+          document.documentElement.classList.remove("dark");
+        }
+      });
+    </script>
   </head>
-  <body>
+  <body class="dark:bg-slate-800 dark:text-slate-200">
     <div id="root"></div>
     <script type="module" src="/src/index.tsx"></script>
   </body>
