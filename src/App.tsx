@@ -1,9 +1,12 @@
 import "./App.css";
 
 import type { FC } from "react";
+import { lazy, Suspense } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-import Root from "./pages/root/page";
+import Loader from "./components/loader/Loader";
+
+const Root = lazy(() => import("./pages/root/page"));
 
 /**
  * `App` serves as a container or entry point of application.
@@ -12,9 +15,11 @@ import Root from "./pages/root/page";
 const App: FC = () => {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/*" element={<Root />} />
-      </Routes>
+      <Suspense fallback={<Loader />}>
+        <Routes>
+          <Route path="/*" element={<Root />} />
+        </Routes>
+      </Suspense>
     </BrowserRouter>
   );
 };
